@@ -752,7 +752,6 @@ To deploy an application with ArgoCD, you can follow these steps, which I'll out
 
 
 
-<img width="1915" height="878" alt="Screenshot 2026-01-03 031135" src="https://github.com/user-attachments/assets/464a1d4b-f99e-4d62-a7f6-a070fe25dfae" />
 <img width="1904" height="793" alt="Screenshot 2026-01-03 031322" src="https://github.com/user-attachments/assets/f3fe782f-44d3-45c2-a944-e732f4fcb81a" />
 <img width="1919" height="966" alt="Screenshot 2026-01-03 031355" src="https://github.com/user-attachments/assets/0a245b28-bbff-46fd-a7f2-6facac31e7ad" />
 <img width="1917" height="957" alt="Screenshot 2026-01-03 031413" src="https://github.com/user-attachments/assets/a5268318-efc9-4041-882e-e59bb95b1417" />
