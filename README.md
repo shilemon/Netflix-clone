@@ -197,7 +197,7 @@ pipeline {
         }
         stage('Checkout from Git') {
             steps {
-                git branch: 'main', url: 'https://github.com/N4si/DevSecOps-Project.git'
+                git branch: 'main', url: 'https://github.com/shilemon/Netflix-clone.git'
             }
         }
         stage("Sonarqube Analysis") {
@@ -287,7 +287,7 @@ pipeline{
         }
         stage('Checkout from Git'){
             steps{
-                git branch: 'main', url: 'https://github.com/N4si/DevSecOps-Project.git'
+                git branch: 'main', url: 'https://github.com/shilemon/Netflix-clone.git'
             }
         }
         stage("Sonarqube Analysis "){
@@ -326,8 +326,8 @@ pipeline{
                 script{
                    withDockerRegistry(credentialsId: 'docker', toolName: 'docker'){   
                        sh "docker build --build-arg TMDB_V3_API_KEY=<yourapikey> -t netflix ."
-                       sh "docker tag netflix nasi101/netflix:latest "
-                       sh "docker push nasi101/netflix:latest "
+                       sh "docker tag netflix emon110852/netflix"
+                       sh "docker push emon110852/netflix "
                     }
                 }
             }
@@ -339,7 +339,7 @@ pipeline{
         }
         stage('Deploy to container'){
             steps{
-                sh 'docker run -d --name netflix -p 8081:80 nasi101/netflix:latest'
+                sh 'docker run -d --name netflix -p 8081:80 emon110852/netflix'
             }
         }
     }
@@ -749,3 +749,21 @@ To deploy an application with ArgoCD, you can follow these steps, which I'll out
 
 1. **Cleanup AWS EC2 Instances:**
     - Terminate AWS EC2 instances that are no longer needed.
+
+
+
+<img width="1915" height="878" alt="Screenshot 2026-01-03 031135" src="https://github.com/user-attachments/assets/464a1d4b-f99e-4d62-a7f6-a070fe25dfae" />
+<img width="1904" height="793" alt="Screenshot 2026-01-03 031322" src="https://github.com/user-attachments/assets/f3fe782f-44d3-45c2-a944-e732f4fcb81a" />
+<img width="1919" height="966" alt="Screenshot 2026-01-03 031355" src="https://github.com/user-attachments/assets/0a245b28-bbff-46fd-a7f2-6facac31e7ad" />
+<img width="1917" height="957" alt="Screenshot 2026-01-03 031413" src="https://github.com/user-attachments/assets/a5268318-efc9-4041-882e-e59bb95b1417" />
+<img width="1914" height="962" alt="Screenshot 2026-01-03 031445" src="https://github.com/user-attachments/assets/009f6e5a-6d47-48ae-9bcf-dcf6acb37f9e" />
+<img width="1917" height="926" alt="Screenshot 2026-01-03 031459" src="https://github.com/user-attachments/assets/6d449810-4b60-4b82-b556-6e4462d29614" />
+<img width="1919" height="966" alt="Screenshot 2026-01-03 031930" src="https://github.com/user-attachments/assets/d9586041-8f4d-467b-9a16-73832ce63c30" />
+<img width="1919" height="982" alt="Screenshot 2026-01-03 032851" src="https://github.com/user-attachments/assets/f3250071-12c2-4df1-8258-8e2d0eedecd5" />
+<img width="1915" height="969" alt="Screenshot 2026-01-03 033001" src="https://github.com/user-attachments/assets/1105e447-329a-4925-8465-635bf7c66f22" />
+<img width="1915" height="878" alt="Screenshot 2026-01-03 031533" src="https://github.com/user-attachments/assets/14e0b20c-eea7-4836-9562-5a14371d1697" />
+
+
+
+
+
